@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="52dp" />
+
+    <RadioGroup
+        android:id="@+id/CoffeeRadioGroup"
+        android:layout_width="411dp"
+        android:layout_height="363dp"
+        android:padding="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="79dp">
+
+
+        <RadioButton
+            android:id="@+id/VlatteRB"
+            android:layout_width="221dp"
+            android:layout_height="62dp"
+            android:text="Vanilla Latte"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="155dp" />
+
+        <RadioButton
+            android:id="@+id/SLatteRB"
+            android:layout_width="217dp"
+            android:layout_height="63dp"
+            android:text="Spanish Latte"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="203dp" />
+
+        <RadioButton
+            android:id="@+id/cFrapRB"
+            android:layout_width="217dp"
+            android:layout_height="63dp"
+            android:text="Chocolate Frappuccino"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="203dp" />
+
+        <RadioButton
+            android:id="@+id/AmericanoRB"
+            android:layout_width="217dp"
+            android:layout_height="63dp"
+            android:text="Iced Americano"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="203dp" />
+
+        <RadioButton
+            android:id="@+id/hotAmericanoRB"
+            android:layout_width="217dp"
+            android:layout_height="63dp"
+            android:text="Hot Americano"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="203dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/coffeeBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="52dp"
+        android:text="Order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CoffeeRadioGroup"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/cancelBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="52dp"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/coffeeBT"
+        app:layout_constraintTop_toBottomOf="@+id/CoffeeRadioGroup"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/titletextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Pick a Coffee!"
+        app:layout_constraintBottom_toTopOf="@+id/CoffeeRadioGroup"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="150dp"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
